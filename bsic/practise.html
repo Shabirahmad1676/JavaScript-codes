@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM PRACTISE</title>
+  <style>
+    body{
+      background-color: aquamarine;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .links{
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading" onclick="console.log('I am clicked')">Heading 1</h1>
+  <a class="link" href="">Home</a>
+  <h1>Heading 2</h1>
+  <div class="box">
+    <a class="link" href="">About Us</a>
+    <h1>Heading 3</h1>
+    <a class="link" href="">Contact</a>
+  </div>
+
+</body>
+<script>
+  // const heading = document.querySelectorAll('h1')
+  // heading[2].style.color='red'
+
+  const anchor = document.querySelectorAll('.link')
+  // anchor[1].style.color="red"
+  // for(let i=0;i<=anchor.length;i++){
+  //   anchor[i].style.color='red'
+
+  // }
+  for(let clrs of anchor){
+    // clrs.style.color="white"
+    // clrs.style.textDecoration = "none"
+      // clrs.className = "links"
+      clrs.setAttribute('class','links')
+  }
+  // console.log(anchor);
+</script>
+</html>

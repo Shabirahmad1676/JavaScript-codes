@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  min-height: 80vh;
+ background-color:rgb(223, 212, 212) ;
+  position: relative;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+  height: 90%;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  min-height: 8vh;
+  align-items: center;
+}
+.list-items{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.headline{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  
+}
+.btn{
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: antiquewhite;
+  margin-top: 1rem;
+}
+.btn-headline{
+  padding: 1rem 2rem;
+}
+.section-todo{
+  text-align: center;
+  margin-top: 1rem;
+}
+.form-todo{
+  /* border: 2px solid red; */
+  min-height: 5vh;
+  display: flex;
+  gap: 1rem;
+}
+.form-todo input{
+min-height: 100%;
+margin-top: 1rem;
+}
+.form-todo input[type=text]{
+  width: 78%;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+.form-todo input[type=submit]{
+  width: 28%;
+}
+.section-signup{
+  margin: 4rem auto;
+ text-align: center;
+ background-color: rgb(238, 231, 231);
+ padding: 1rem;
+ border-radius: 10px;
+}
+.signupform{
+ max-width: 800px;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+}
+.signupform label{
+display: block;
+}
+.signupform textarea{
+  width: 100%;
+}
+.form-group{
+  margin-top: 1rem;
+}
+.signupform input{
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+}
+.signup-btn{
+  padding: 1rem 2rem;
+  background-color: black;
+  color: whitesmoke;
+  margin: auto;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 10px;
+}

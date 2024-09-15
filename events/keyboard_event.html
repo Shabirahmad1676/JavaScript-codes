@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyBoard Event's</title>
+  </head>
+  <body>
+    <h1 tabindex="0">keyboard Event</h1>
+    <div class="box">
+      <h2>First Element</h2>
+      <h2 class="second">Second element</h2>
+      <a href="https://google.com" id="anchor">Google</a>
+    </div>
+    <!-- <input type="text"> -->
+  </body>
+  <script>
+    const div = document.querySelector(".box");
+    const h2 = document.querySelector(".second");
+
+    div.addEventListener(
+      "click",
+      (e) => {
+        console.log("Div is clicked");
+      },
+      false
+    );
+
+    h2.addEventListener(
+      "click",
+      (e) => {
+        console.log("h2 is clicked");
+        e.stopPropagation();
+      },
+      false
+    );
+
+    document.querySelector("#anchor").addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+    // h1.addEventListener('keypress',(e)=>{
+    //   // console.log(e.keyCode);
+    //   // console.log(e.timeStamp);
+    //   console.log(e.defaultPrevented);
+    // })
+    // window.addEventListener('keypress',(e)=>{
+    //   // console.log(e.keyCode);
+    //   console.log(e);
+    // })
+  </script>
+</html>

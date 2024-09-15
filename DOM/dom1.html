@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="language">
+    <li style="color: rgb(43, 255, 0);">JavaScript</li>
+  </ul>
+</body>
+<script>
+
+
+  // function addlanguage(langName){
+  //   const listitem = document.createElement('li');
+  //   listitem.innerHTML = `${langName}`
+  //   document.querySelector(".language").appendChild(listitem)
+    
+  // }
+  // addlanguage("TypeScript")
+  // addlanguage("python")
+
+  // Method 2 of adding element which is optimized way of adding 
+  function addlanguage(langName){
+    const listitem = document.createElement('li')
+    listitem.appendChild(document.createTextNode(langName))
+    document.querySelector(".language").appendChild(listitem)
+  }
+  addlanguage("C++")
+  addlanguage("Rubby")
+  addlanguage("C#")
+
+  // EDit  or change
+
+  const editorremove = document.querySelector("li:nth-child(2)")
+  // editorremove.innerHTML = "Typescript" //Not optimized way
+  const change = document.createElement("li")
+  change.textContent = "Typescript"
+  editorremove.replaceWith(change)
+
+
+  // remove
+  const remove = document.querySelector("li:last-child")
+  remove.remove()
+</script>
+</html>

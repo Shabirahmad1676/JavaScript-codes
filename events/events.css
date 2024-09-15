@@ -1,0 +1,44 @@
+body{
+  background-color: black;
+  color: antiquewhite;
+}
+.container{
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 400px;
+  /* background-color: aquamarine; */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.reveal-btn{
+  height: 80%;
+  width: 160px;
+  background-color: black;
+}
+.boxes{
+  border: 1px solid whitesmoke;
+  color: antiquewhite;
+  border-radius: 8px;
+}
+.hidden-content{
+  width: 480px;
+  height: 80%;
+  box-sizing: border-box;
+  /* padding-top: 80px; */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+.hidden-content{
+  /* display: none; */
+}
+.hidden-content.reveal-btn{
+  display: block;
+}

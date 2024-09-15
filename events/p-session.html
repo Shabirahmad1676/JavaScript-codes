@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="session.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; padding-top: 50px">Event Listner</h1>
+    <div class="container">
+      <div class="box-1">
+        <h1>Example 1</h1>
+        <button onclick="alert('I love JavaScript')">Enter</button>
+      </div>
+      <div class="box-2">
+        <h1>Example 2</h1>
+        <button class="btn-2">Enter</button>
+      </div>
+      <div class="box-3">
+        <h1>Example 3</h1>
+        <button class="btn-3">Enter</button>
+      </div>
+    </div>
+    <div class="my-buttons">
+      <button>One</button>
+      <button>two</button>
+      <button>three</button>
+    </div>
+  </body>
+  <script>
+    const btnalert = document.querySelector(".btn-2");
+    function alertfunction() {
+      alert("I love javaScript!");
+    }
+
+    btnalert.addEventListener("click", alertfunction);
+
+    const newBgColor = document.querySelector(".box-3");
+
+    function BgColorFunction() {
+      newBgColor.style.backgroundColor = "blue";
+     
+    }
+
+    newBgColor.addEventListener("mouseover", BgColorFunction);
+
+    const clickMe = document.querySelectorAll('.my-buttons button')
+    // console.log(clickMe);
+    for(let btn of clickMe){
+    btn.addEventListener('click',function(e){
+      // console.log('I am clicked')
+      e.target.style.color='black'
+      e.target.style.backgroundColor='green'
+    })
+}
+  </script>
+</html>
